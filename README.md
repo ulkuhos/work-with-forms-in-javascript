@@ -1,4 +1,4 @@
-# Work With Forms - In Javascript 
+# Work With Forms - In JavaScript 
  *Form uzerinde veri girisi yapilmasi ve submit edildiginde formun sifirlanarak verilerin altta olusacak bir ul etiketi icinde listelenmesi,
  *Forma tum veriler girilince submit edilmesi ve ekranda basarili uyarisi verilmesi, *Formdaki inputlara veri girilmediginde veya bos bir sekilde submit edildiginde eksik bilgi uyarisi verilmesi islemleri yapilabilmektedir.
  
