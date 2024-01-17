@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-secondary">
+    <!-- ekranda bilgilerle ilgili bir uyari penceresi olusturalim, bunun icin bir div olusturduk -->
+    <div id="alert" >
+    </div> 
+    <!-- calisma icin bir container olusturduk -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4 offset-sm-4 mt-5">
+                <form id="userForm"> <!--forma bir id verilir -->
+                    <!-- bir formdan veri 2 method ile alinir get ve post methodları ile-->
+                    <!-- default olarak arkaplanda get calisir ama biz post istersek belirtmemiz gerekiyor.-->
+                    <!-- gonder butonuna her bastigimizda sayfa yenileniyor yani sayfada her seferinde islem oluyor. Hem bunu hem de yukarıda adres cubugunda gonder butonuna basinca input name ile gonderilen veriler cikiyor ve guvenlik sorunu olmasin diye bunlari engelliyoruz.disabled ile submit yapilir-->
+                    <div class="mb-3">
+                        <label class="form-label" for="username"><strong>Kullanici
+                            Adi</strong></label><!--form-label class i verdik-->
+                        <!--input id si username i alip labl'in for kismina yazariz.-->
+                        <input class="form-control" type="text" name="username"
+                            id="username"><!--form-control class i verdik-->
+                        <!--bir input daha tanimladik name ve id verdik.-->
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label" for="score"><strong>Not Bilgisi</strong></label><!--form-label class i verdik-->
+                        <!--id si score olan inputun bilgisini labelin for kismina da score olarak ekledik-->
+                        <input class="form-control" type="number" name="score"
+                            id="score"><!--form-control class i verdik-->
+                        <!--inputa number type tanimlanir id ve name ayni verilir -->
+                        <!-- input name adres cubugunda veri tasidigi icin onemlidr, get ve post yontemi ile veri kullanicidan alinir. En sagliklisi post yontemidir -->
+                    </div>
+
+                    <div class="mb-3 text-center">
+                        <button type="reset" class="btn btn-danger">Sifirla</button>
+                        <button type="submit" class="btn btn-success">Gonder</button>
+                        <!--buttona submit ozelligi eklenir class verilir -->
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-sm-4 offset-sm-4 mt-4"> <!--bootstrp ul list asagidaki kodu kopyala yapistir yaptik ve duzenlemeler ekledik ve class bilgisine ise  mt-4 classı ekledik--> 
+                <ul class="list-group" id="userList"> <!--ul ye bir id ekledik js ile cagirmak icin-->
+                    <!--Bu ornek ile li'yi js koduna aldik ve bunu js kodlara ekleyerek classlarini kullandik.BUna gore ekranda li olusturmasini istedik. 
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A list item
+                      <span class="badge bg-primary rounded-pill">14</span>
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+   
+    <script src="formExercise.js"></script>
+
+
+
+</body>
+
+</html>
